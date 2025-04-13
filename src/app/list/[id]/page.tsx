@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from './BookList.module.css'
 
+
 import { BackIcon } from "./Back";
 import Overlay from "./Overlay";
 
@@ -11,13 +12,11 @@ async function getBookList(id){
     return json
 }
 
-interface Props {
-    params: {
-        id: string;
-    }
-}
-
-export default async function BookList( {params}:Props){
+export default async function BookList({
+    params,
+  }: {
+    params: { id: string };
+  }) {
     const { id } = params;
     const bookList = await getBookList(id);
     

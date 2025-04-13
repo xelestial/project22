@@ -1,0 +1,28 @@
+
+.header {
+    width: 100vw;
+    height: 8.5vh;
+    border-bottom: 1px grid gray;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.headerLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

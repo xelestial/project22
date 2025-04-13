@@ -1,0 +1,71 @@
+
+/* components/Card.module.css */
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 350px;
+    background-color: #f9f9f9;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", sans-serif;
+    backdrop-filter: saturate(180%) blur(20px);
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    scale: 1.1;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);;
+  }
+  
+  .image {
+    border-radius: 20px;
+    display: flex;
+    object-fit: cover;
+    aspect-ratio: 0.633;
+    height: 350px;
+    /* width: 200px; */
+  }
+  
+  .content {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    display: flex;
+    /* width: 200px; */
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+  }
+  
+  .description {
+    display: flex;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+  

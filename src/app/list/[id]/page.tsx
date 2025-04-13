@@ -18,7 +18,7 @@ interface Props {
 }
 
 export default async function BookList( {params}:Props){
-    const { id } = await params;
+    const { id } = params;
     const bookList = await getBookList(id);
     
     return (
@@ -26,7 +26,7 @@ export default async function BookList( {params}:Props){
         <div className={styles.iconContainer}>
                 <BackIcon />
         </div>
-        <div className={styles.genreTitle}>
+        <div className={styles.title}>
             { bookList.results.list_name }
         </div>
         <div className={styles.container}>

@@ -22,13 +22,13 @@ export default async function BookList({
     const bookList = await getBookList(id);
     
     return (
-        <> 
-        <div className={styles.iconContainer}>
+        <div className={styles.screen}> 
+            <div className={styles.iconContainer}>
                 <BackIcon />
-        </div>
-        <div className={styles.title}>
-            { bookList.results.list_name }
-        </div>
+                <div className={styles.genreTitle}>
+                { bookList.results.list_name }
+                </div>
+            </div>
         <div className={styles.container}>
             {/* { JSON.stringify(bookList)} */}
             {/* { JSON.stringify(bookDetail)} */}
@@ -68,6 +68,6 @@ export default async function BookList({
                 </Overlay> )
             })}
         </div>
-        </>
+        </div>
     );
 }

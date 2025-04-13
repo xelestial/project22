@@ -12,12 +12,13 @@ async function getBookList(id){
     return json
 }
 
+
 export default async function BookList({
     params,
   }: {
-    params: { id: string };
+    params: Promise<{ id: string }>
   }) {
-    const { id } = params;
+    const { id } = await params;
     const bookList = await getBookList(id);
     
     return (
